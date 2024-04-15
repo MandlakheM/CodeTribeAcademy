@@ -1,60 +1,130 @@
-
 .topnav {
-    overflow: hidden;
-    background-color:#F3D9B1;
-  }
+  background-color: #fdf0d5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 
-  .topnav a {
-    float:right;
-    color: #A22522;
-    text-align:center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #A8C256;
-    color: white;
-  }
+.topnav a {
+  float: right;
+  color: #003049;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-  .logo {
-    width: 50px;
-    height:30px;
-    padding-top: 5px;
-    padding-left: 5px;
-  }
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-  .pic{
-    width:fit-content;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-between;
-  }
+.topnav a.active {
+  background-color: #669bbc;
+  color: white;
+}
 
-  .pic img{
-    height: 300px;
-    width: 300px;
-    border-radius: 50px;
-    position: right;
-  }
+.logo {
+  width: 50px;
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
 
-  .google-map {
-    padding-bottom: 50%;
-    position: relative;
+.video-intro {
+  padding-top: 10px;
+  width: 100%;
+  height: 570px;
+}
+
+#video {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-family:"jersey";
+}
+.text-pic {
+  margin-top: 50px;
+  width: 100%;
+  height: 300px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#pic {
+  width: 500px;
+}
+
+#pic img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.google-map {
+  background-color: #a22522;
+  width: 500px;
+  height: 300px;
+  border-radius: 50px;
+  overflow: hidden;
+  position: absolute;
+  top: 970px;
+  right: 0;
 }
 
 .google-map iframe {
-    height: 50%;
-    width: 50%;
-    left: 0;
-    top: 0;
-    position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.aboutMe {
+  background-color: aqua;
+  width: 500px;
+  height: 500px;
+  padding-top: 50px;
+  margin-left: 450px;
+}
+
+.contactMe {
+  background-color: aqua;
+  width: 500px;
+  height: 500px;
+  padding-top: 50px;
+  margin-left: 450px;
 }

@@ -5,41 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Website Title</title>
     <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    @import
+    url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap') />
   </head>
   <body>
     <nav class="topnav">
+      <a href="contact.html">Contact Me</a>
+      <a href="aboutMe.html">About Me</a>
       <a class="active" href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact Us</a>
+
       <div class="logo">
         <img src="img/images.jpeg" alt="LOGO" class="logo" />
       </div>
     </nav>
+    <div class="video-intro">
+      <video autoplay muted loop id="video">
+        <source src="img/introVid.mp4" type="video/mp4" />
+        <source src="img/introVid.mp4" type="video/ogg" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="text-pic">
+      <div id="text" style="margin-left: 50px">
+        <h1><strong>MANDILAKHE MANGUMTA</strong></h1>
 
-    <video width="1300" height="650" autoplay muted loop>
-      <source src="img/introVid.mp4" type="video/mp4" />
-      <source src="img/introVid.mp4" type="video/ogg" />
-      Your browser does not support the video tag.
-    </video>
-    <h1><strong>MANDILAKHE MANGUMTA</strong></h1>
-    <div class="pic">
-      <p>
-        I go by the name Mandilakhe, a 23 year old male from Soweto.<br />
-        On my spare time I like learning new things and I am particularly into technology
-      </p>
-      <img src="img/1707766378802.jpg" alt="" />
+        <p>
+          I go by the name Mandilakhe, a 23 year old male from Soweto.<br />
+          On my spare time I like learning new things and I am particularly into
+          technology
+        </p>
+      </div>
+      <div id="pic">
+        <img src="img/1707766378802.jpg" alt="" />
+      </div>
     </div>
     <hr />
-    <p>
-     4875 Nicholas street <br> Orlando East <br>Soweto <br>1804
+    <p style="margin-left: 50px">
+      4875 Nicholas street <br />
+      Orlando East <br />Soweto <br />1804
     </p>
-    <ul>
-      <li><a href="https://web.facebook.com/mandilakhe.mangumta?_rdc=1&_rdr">Facebook</a></li>
-    </ul>
+    <a
+      href="https://web.facebook.com/mandilakhe.mangumta?_rdc=1&_rdr"
+      class="fa fa-facebook"
+    ></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
 
     <div class="google-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d9168.358470711606!2d27.930488468452634!3d-26.249776052767295!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1712539594051!5m2!1sen!2sza" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-   </div>
-
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d9168.358470711606!2d27.930488468452634!3d-26.249776052767295!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1712539594051!5m2!1sen!2sza"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
   </body>
 </html>
