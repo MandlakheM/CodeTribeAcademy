@@ -1,60 +1,186 @@
+body {
+  background: #ede9e3;
+}
 
-.topnav {
-    overflow: hidden;
-    background-color:#F3D9B1;
-  }
+header {
+  background: #ede9e3;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+}
 
-  .topnav a {
-    float:right;
-    color: #A22522;
-    text-align:center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #A8C256;
-    color: white;
-  }
+ul {
+  display: flex;
+  list-style-type: none;
+}
+li {
+  padding: 0.5rem;
+}
+li a {
+  color: #00aeb7;
+  font-family: nunito, sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 14px 16px;
+}
 
-  .logo {
-    width: 50px;
-    height:30px;
-    padding-top: 5px;
-    padding-left: 5px;
-  }
+header a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-  .pic{
-    width:fit-content;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-between;
-  }
+header a.active {
+  background-color: #324ba6;
+  color: white;
+}
 
-  .pic img{
-    height: 300px;
-    width: 300px;
-    border-radius: 50px;
-    position: right;
-  }
+.logo {
+  width: 50px;
+  height: 50px;
+  padding-top: 5px;
+  padding-left: none;
+}
 
-  .google-map {
-    padding-bottom: 50%;
-    position: relative;
+.video-intro {
+  padding-top: 10px;
+  width: 100%;
+  height: 570px;
+}
+
+#video {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+}
+.orange-text {
+  font-family: cursive;
+  color: #c9dbf4;
+}
+.text-pic {
+  margin-top: 50px;
+  width: 100%;
+  height: 300px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#pic {
+  object-fit: cover;
+  width: 500px;
+  text-align: center;
+}
+.jersey-10-charted-regular {
+  font-family: "Jersey 10 Charted", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.surname {
+  color: #00aeb7;
+}
+#pic img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50px;
+}
+
+#text {
+  height: 300px;
+  width: 630px;
+  border-radius: 50px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.social-icons {
+  display: flex;
+  padding: 50px;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.google-map {
+  background-color: #a22522;
+  width: 500px;
+  height: 300px;
+  border-radius: 50px;
+  overflow: hidden;
+  position: absolute;
+  top: 1200px;
+  right: 0;
 }
 
 .google-map iframe {
-    height: 50%;
-    width: 50%;
-    left: 0;
-    top: 0;
-    position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.aboutMe {
+  display: grid;
+  justify-items: center;
+}
+
+.aboutMe p {
+  font-family: PT Sans, sans-serif;
+}
+
+.submit {
+  border: none;
+  border-radius: 15px 15px 15px 15px;
+
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+
+  text-align: center;
+  cursor: pointer;
+  font-family: PT Sans, sans-serif;
+  border-color: #00aeb7;
+  border-style: groove;
+  background-color: #c2b3b368;
+}
+
+.contactMe {
+  background-color: aqua;
+  width: 500px;
+  height: 500px;
+  padding-top: 50px;
+  margin-left: 450px;
 }
