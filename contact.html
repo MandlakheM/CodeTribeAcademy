@@ -13,48 +13,64 @@
           ><strong>Contact <span class="surname">Me</span></strong></i
         >
       </h4>
-      <div style="display: flex">
-        <p>
-          <strong>Name and Surname</strong>
-        </p>
-        <input
-          type="text"
-          style="
-            margin-top: 15px;
-            border-radius: 15px 15px 15px 15px;
-            border-color: #00aeb7;
-          "
-        />
-      </div>
-      <div style="display: flex">
-        <p>
-          <strong>Email address</strong>
-        </p>
-        <input
-          type="text"
-          style="
-            margin-top: 15px;
-            border-radius: 15px 15px 15px 15px;
-            border-color: #00aeb7;
-          "
-        />
-      </div>
 
-      <input
-        style="height: 100px; width: 200px; margin-top: 15px"
-        type="text"
-        name=""
-        id=""
-        placeholder="please leave a message here"
-      />
-      <br />
-      <input
-        class="submit"
-        submit
-        name="Submit"
-        id="Submit"
-        placeholder="Submit"
-      />
+      <form
+        id="fs-frm"
+        name="simple-contact-form"
+        accept-charset="utf-8"
+        action="https://formspree.io/f/{https://formspree.io/f/xwkgaazg}"
+        method="post"
+      >
+        <fieldset id="fs-frm-inputs">
+          <label for="full-name">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            id="full-name"
+            placeholder="First and Last"
+            required=""
+            fdprocessedid="17tnf"
+            style="
+              margin-top: 15px;
+              border-radius: 15px 15px 15px 15px;
+              border-color: #00aeb7;
+            "
+          />
+          <br />
+          <label for="email-address">Email Address</label>
+          <input
+            type="email"
+            name="_replyto"
+            id="email-address"
+            placeholder="email@domain.tld"
+            required=""
+            fdprocessedid="bc5o2f"
+            style="
+              margin-top: 15px;
+              border-radius: 15px 15px 15px 15px;
+              border-color: #00aeb7;
+            "
+          />
+          <br />
+          <label for="message">Message</label>
+          <br />
+          <textarea
+            rows="5"
+            name="message"
+            id="message"
+            placeholder=""
+            required=""
+            style="width: 300px"
+          ></textarea>
+          <input
+            type="hidden"
+            name="_subject"
+            id="email-subject"
+            value="Contact Form Submission"
+          />
+        </fieldset>
+        <input type="submit" value="Submit" fdprocessedid="h5jzig" />
+      </form>
     </div>
   </body>
 </html>

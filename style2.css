@@ -177,6 +177,10 @@ header a.active {
   background-color: #c2b3b368;
 }
 
+form{
+  width:500px;
+  height: 100px;
+}
 .contactMe {
   background-color: aqua;
   width: 500px;
