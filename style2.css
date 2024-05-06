@@ -153,7 +153,8 @@ header a.active {
 
 .aboutMe {
   display: grid;
-  justify-items: center;
+  justify-content: center;
+  grid-template-columns: 300px;
 }
 
 .aboutMe p {
@@ -187,4 +188,17 @@ form {
   height: 500px;
   padding-top: 50px;
   margin-left: 450px;
+}
+
+.paragraphFont {
+  text-align: center;
+  margin-top: 10px;
+  font-family: PT Sans, sans-serif;
+}
+
+.nameContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
 }
